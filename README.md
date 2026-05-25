@@ -3,7 +3,7 @@
 A personal portfolio website built with React and Vite, showcasing my projects, skills, and experience as a Full Stack Developer.
 
 ## Live Demo
-[Coming soon — deploying to Vercel]
+https://daniel-tzul-portfolio.vercel.app/
 
 ## About
 I am a Full Stack Developer graduating from Dallas College in December 2026 with an A.A.S. in Web Development. I specialize in building AI-powered web applications using Python backends and React frontends.
