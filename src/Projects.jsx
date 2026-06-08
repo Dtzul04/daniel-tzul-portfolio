@@ -17,7 +17,7 @@ function Projects() {
 
                 <div className={`bg-[#1a1a1a] border border-[#1D9E75]/60 rounded-xl p-6 flex flex-col gap-4 ${className}`}>
                     <h3 className="text-xl font-bold ">Finder Dallas</h3>
-                    <p className="text-md leading-relaxed"></p>
+                    <p className="text-md leading-relaxed">A full-stack web application designed to help Dallas residents instantly locate essential community resources like food banks, shelters, job centers, and health services. The platform features a fast, responsive user interface built with React, TypeScript, and Tailwind CSS, while utilizing Vercel Serverless Functions on the backend to deliver sub-second search results. By streamlining the search experience, the application ensures that critical local assistance is highly accessible and easy to navigate.</p>
                     <a href="https://github.com/Dtzul04/FinderDallas.git" className="text-[#9ca3af] hover:text-[#1D9E75] transition-colors duration-300">View on GitHub</a>
                 </div>
 
