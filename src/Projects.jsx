@@ -16,9 +16,9 @@ function Projects() {
             <div className="flex flex-col md:flex-row gap-8">
 
                 <div className={`bg-[#1a1a1a] border border-[#1D9E75]/60 rounded-xl p-6 flex flex-col gap-4 ${className}`}>
-                    <h3 className="text-xl font-bold ">Kurbot</h3>
-                    <p className="text-md leading-relaxed">An interactive AI chatbot built directly into Reddit posts that turns standard, read-only posts into live chat rooms. It acts as a conversational partner that remembers your chat history for that specific post, allowing you to have a continuous, context-aware conversation without ever leaving the page.</p>
-                    <a href="https://github.com/Dtzul04/kurbot-friend.git" className="text-[#9ca3af] hover:text-[#1D9E75] transition-colors duration-300">View on GitHub</a>
+                    <h3 className="text-xl font-bold ">Finder Dallas</h3>
+                    <p className="text-md leading-relaxed"></p>
+                    <a href="https://github.com/Dtzul04/FinderDallas.git" className="text-[#9ca3af] hover:text-[#1D9E75] transition-colors duration-300">View on GitHub</a>
                 </div>
 
                 <div className={`bg-[#1a1a1a] border border-[#1D9E75]/60 rounded-xl p-6 flex flex-col gap-4 ${className}`}>
