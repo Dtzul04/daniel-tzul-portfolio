@@ -17,7 +17,7 @@ function Projects() {
 
             <div className={`bg-[#1a1a1a] border border-[#1D9E75]/60 rounded-xl p-6 flex flex-1 flex-col gap-4 ${className}`}>
                     <h3 className="text-xl font-bold">Magnifit</h3>
-                    <p className="text-md leading-relaxed flex-grow"></p>
+                    <p className="text-md leading-relaxed flex-grow">Magnifit is a full-stack workout tracker built to log, manage, and review gym sessions. Built with React, TypeScript, Node.js, Express, and PostgreSQL, it features full CRUD functionality: add workouts, filter by type, edit entries, and delete them. The backend is a REST API connected to a Supabase PostgreSQL database, deployed on Render with the frontend on Vercel.</p>
                     <a href="https://github.com/Dtzul04/Magnifit.git" className="mt-auto text-[#9ca3af] hover:text-[#1D9E75] transition-colors duration-300">View on GitHub</a>
                 </div>
 
