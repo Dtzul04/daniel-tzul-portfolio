@@ -17,7 +17,7 @@ function Contact() {
                 <a href="mailto:dtzul8@gmail.com" target="_blank" rel="noopener noreferrer" className="text-lg md:text-xl text-[#1D9E75] hover:text-white transition-colors duration-300">Email: dtzul8@gmail.com</a>
                 <a href="https://www.linkedin.com/in/dtzul04/" target="_blank" rel="noopener noreferrer" className="text-lg md:text-xl text-[#1D9E75] hover:text-white transition-colors duration-300">LinkedIn: Daniel Tzul</a>
                 <a href="https://github.com/Dtzul04" target="_blank" rel="noopener noreferrer" className="text-lg md:text-xl text-[#1D9E75] hover:text-white transition-colors duration-300">GitHub: Dtzul04</a>
-                <a href="/Daniel_Tzul_Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-lg md:text-xl text-[#1D9E75] hover:text-white transition-colors duration-300">View Resume</a>
+                <a href="Daniel_Tzul_Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-lg md:text-xl text-[#1D9E75] hover:text-white transition-colors duration-300">View Resume</a>
             </div>
 
             <div className="w-full md:w-2/3 bg-[#1a1a1a] text-[#f5f5f5] border border-[#1D9E75]/60 rounded-xl p-8 flex flex-col gap-4">

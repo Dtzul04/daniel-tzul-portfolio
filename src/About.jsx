@@ -31,7 +31,8 @@ function About() {
                         build things and real things that people could actually use. That 
                         realization sent me to Dallas College to pursue my A.A.S. in Web 
                         Development, where I have maintained a 3.8 GPA while building 
-                        and deploying real applications outside of class. I do not just 
+                        and deploying real applications outside of class. I work with 
+                        React, Node.js, Express, and PostgreSQL, and I do not just 
                         study development, I practice it every day.<br/><br/>
                         Right now I am looking for the right opportunity: a team that 
                         takes their craft seriously, values growth, and wants someone 

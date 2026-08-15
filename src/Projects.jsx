@@ -1,12 +1,34 @@
 import { useState, useEffect } from 'react'
 
 function Projects() {
-    const [visible, setVisible] = useState(false)
-    useEffect(() => {
-        setVisible(true)
-    }, [])
 
-    const className = `hover:scale-105 transition-transform duration-300 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`
+
+    const projects = [
+        {
+            title: 'Jobify',
+            description: 'A job application tracker for logging roles, updating status (pending, interview, declined), and reviewing your search with a simple dashboard. Built as a full-stack app so applications stay saved and easy to manage.',
+            link: 'https://github.com/Dtzul04/Jobify.git',
+            image: '/projects-assets/Jobify.png',
+            technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL'],
+            github: 'https://github.com/Dtzul04/Jobify.git'
+        },
+        {
+            title: 'Magnifit',
+            description: 'A workout tracker to log, filter, edit, and delete gym sessions. React and TypeScript on the frontend, with an Express REST API and a Supabase PostgreSQL database. Frontend on Vercel, backend on Render.',
+            link: 'https://github.com/Dtzul04/Magnifit.git',
+            image: '/projects-assets/Magnifit.png',
+            technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL'],
+            github: 'https://github.com/Dtzul04/Magnifit.git'
+        },
+        {
+            title: 'Finder Dallas',
+            description: 'A directory for Dallas residents to find food banks, shelters, job centers, and health services in one place, with a search experience that makes local help easier to reach.',
+            link: 'https://github.com/Dtzul04/FinderDallas.git',
+            image: '/projects-assets/FinderDallas.png',
+            technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL'],
+            github: 'https://github.com/Dtzul04/FinderDallas.git'
+        }
+    ]
 
     return (
         <section id="projects" className="bg-[#1e1e1e] text-[#f5f5f5] py-20 px-6 md:px-16">
@@ -14,25 +36,21 @@ function Projects() {
             <h2 className="text-4xl md:text-6xl font-bold mb-12 text-center">Projects</h2>
 
             <div className="flex flex-col md:flex-row md:items-stretch gap-8">
-
-            <div className={`bg-[#1a1a1a] border border-[#1D9E75]/60 rounded-xl p-6 flex flex-1 flex-col gap-4 ${className}`}>
-                    <h3 className="text-xl font-bold">Magnifit</h3>
-                    <p className="text-md leading-relaxed flex-grow">Magnifit is a full-stack workout tracker built to log, manage, and review gym sessions. Built with React, TypeScript, Node.js, Express, and PostgreSQL, it features full CRUD functionality: add workouts, filter by type, edit entries, and delete them. The backend is a REST API connected to a Supabase PostgreSQL database, deployed on Render with the frontend on Vercel.</p>
-                    <a href="https://github.com/Dtzul04/Magnifit.git" className="mt-auto text-[#9ca3af] hover:text-[#1D9E75] transition-colors duration-300">View on GitHub</a>
-                </div>
-
-                <div className={`bg-[#1a1a1a] border border-[#1D9E75]/60 rounded-xl p-6 flex flex-1 flex-col gap-4 ${className}`}>
-                    <h3 className="text-xl font-bold ">Finder Dallas</h3>
-                    <p className="text-md leading-relaxed flex-grow">A full-stack web application designed to help Dallas residents instantly locate essential community resources like food banks, shelters, job centers, and health services. By streamlining the search experience, the application ensures that critical local assistance is highly accessible and easy to navigate.</p>
-                    <a href="https://github.com/Dtzul04/FinderDallas.git" className="mt-auto text-[#9ca3af] hover:text-[#1D9E75] transition-colors duration-300">View on GitHub</a>
-                </div>
-
-                <div className={`bg-[#1a1a1a] border border-[#1D9E75]/60 rounded-xl p-6 flex flex-1 flex-col gap-4 ${className}`}>
-                    <h3 className="text-xl font-bold">Flolytics</h3>
-                    <p className="text-md leading-relaxed flex-grow">A conversational AI financial advisor that simplifies personal money management. Through an easy-to-use chat interface, it helps you build budgets, plan strategically, and reach your financial goals with clear, actionable advice</p>
-                    <a href="https://github.com/Dtzul04/flolytics.git" className="mt-auto text-[#9ca3af] hover:text-[#1D9E75] transition-colors duration-300">View on GitHub</a>
-                </div>
-
+                {projects.map((project) => (
+                    <div key={project.title} className="bg-[#1a1a1a] border border-[#1D9E75]/60 rounded-xl flex flex-1 flex-col overflow-hidden">
+                        <img src={project.image} alt={project.title} className="w-full aspect-video object-cover object-top" />
+                        <div className="p-6 flex flex-1 flex-col gap-4">
+                            <h3 className="text-xl font-bold">{project.title}</h3>
+                            <p className="text-md leading-relaxed flex-grow">{project.description}</p>
+                            <div className="flex flex-wrap gap-2">
+                                {project.technologies.map((technology) => (
+                                    <span key={technology} className="bg-[#1D9E75]/10 text-[#1D9E75] px-2 py-1 rounded-md text-sm">{technology}</span>
+                                ))}
+                            </div>
+                            <a href={project.github} className="mt-auto text-[#9ca3af] hover:text-[#1D9E75] transition-colors duration-300">View on GitHub</a>
+                        </div>
+                    </div>
+                ))}
             </div>
 
         </section>
