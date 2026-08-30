@@ -19,14 +19,6 @@ I am a Full Stack Developer graduating from Dallas College in December 2026 with
 - **Magnifit** — Workout tracker with CRUD, React, TypeScript, Express, and PostgreSQL
 - **Finder Dallas** — Directory of Dallas community resources (food banks, shelters, job centers)
 
-## Recent Updates (08-14-2026)
-- Replaced Flolytics with Jobify on the Projects page
-- Project cards now pull from a data array and render with `.map()`
-- Each card includes a screenshot, tech tags, and a GitHub link
-- Screenshots live in `public/projects-assets/`
-- About copy now matches the stack: React, Node.js, Express, and PostgreSQL
-- README clone URL, contact links, and Built With list updated
-
 ## Getting Started
 
 Clone the repo:
