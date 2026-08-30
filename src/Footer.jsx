@@ -1,16 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useInView } from './hooks/useInView'
 
 function Footer() {
-    const [visible, setVisible] = useState(false)
-    useEffect(() => {
-        setVisible(true)
-    }, [])
-
-    const fadeClass = `transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`
+    const { ref, fadeClass } = useInView()
 
     return (
         <footer className="bg-[#1a1a1a] text-gray-400 p-6 flex justify-center items-center">
-            <p className={`text-center text-md ${fadeClass}`}>© 2026 Daniel Tzul. All rights reserved.</p>
+            <p ref={ref} className={`text-center text-md ${fadeClass}`}>© 2026 Daniel Tzul. All rights reserved.</p>
         </footer>
     )
 }

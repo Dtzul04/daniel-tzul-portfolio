@@ -1,12 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useInView } from './hooks/useInView'
 
 function Skills() {
-    const [visible, setVisible] = useState(false)
-    useEffect(() => {
-        setVisible(true)
-    }, [])
-
-    const fadeClass = `transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`
+    const { ref, fadeClass } = useInView()
     const skillGroups = [
         {
             title: 'Frontend',
@@ -23,8 +18,9 @@ function Skills() {
     ]
 
     return (
-        <section id="skills" className={`bg-[#0f0f0f] text-[#f5f5f5] py-28 md:py-32 relative ${fadeClass}`}>
+        <section id="skills" className="bg-[#0f0f0f] text-[#f5f5f5] py-28 md:py-32 relative">
 
+            <div ref={ref} className={fadeClass}>
             <div className="px-8 max-w-6xl mx-auto mb-12 md:mb-16">
                 <h2 className="text-4xl md:text-6xl font-bold border-l-4 border-[#1D9E75] pl-4">Tech Stack</h2>
             </div>
@@ -48,6 +44,7 @@ function Skills() {
                         </div>
                     </div>
                 ))}
+            </div>
             </div>
 
         </section>

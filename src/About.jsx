@@ -1,17 +1,12 @@
-import { useState, useEffect } from 'react'
+import { useInView } from './hooks/useInView'
 
 function About() {
-    const [visible, setVisible] = useState(false)
-    useEffect(() => {
-        setVisible(true)
-    }, [])
-
-    const fadeClass = `transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`
+    const { ref, fadeClass } = useInView()
 
     return (
         <section id="about" className="bg-[#0f0f0f] text-[#f5f5f5] py-24 relative">
 
-            <div className={`flex flex-col md:flex-row gap-8 md:gap-16 items-center h-full max-w-5xl w-full mx-auto px-8 ${fadeClass}`}>
+            <div ref={ref} className={`flex flex-col md:flex-row gap-8 md:gap-16 items-center h-full max-w-5xl w-full mx-auto px-8 ${fadeClass}`}>
 
                 <div className="w-full md:w-1/3">
                     <h2 className="text-4xl md:text-6xl font-bold border-l-4 border-[#1D9E75] pl-4">My Story</h2>

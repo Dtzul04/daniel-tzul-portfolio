@@ -1,4 +1,7 @@
+import { useInView } from './hooks/useInView'
+
 function Projects() {
+    const { ref, fadeClass } = useInView()
     const projects = [
         {
             title: 'Jobify',
@@ -31,6 +34,7 @@ function Projects() {
     return (
         <section id="projects" className="bg-[#1e1e1e] text-[#f5f5f5] py-28 md:py-32 px-6 md:px-16">
 
+            <div ref={ref} className={fadeClass}>
             <div className="px-2 max-w-6xl mx-auto mb-12 md:mb-16">
                 <h2 className="text-4xl md:text-6xl font-bold border-l-4 border-[#1D9E75] pl-4">Projects</h2>
             </div>
@@ -63,6 +67,7 @@ function Projects() {
                         </div>
                     </div>
                 ))}
+            </div>
             </div>
 
         </section>

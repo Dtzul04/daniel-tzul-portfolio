@@ -1,12 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useInView } from './hooks/useInView'
 
 function Education() {
-    const [visible, setVisible] = useState(false)
-    useEffect(() => {
-        setVisible(true)
-    }, [])
-
-    const fadeClass = `transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`
+    const { ref, fadeClass } = useInView()
     const education = [
         {
             school: 'Dallas College',
@@ -23,8 +18,8 @@ function Education() {
     ]
 
     return (
-        <section id="education" className={`bg-[#0f0f0f] text-[#f5f5f5] py-28 md:py-32 relative ${fadeClass}`}>
-            <div className="px-8 max-w-6xl mx-auto mb-12 md:mb-16">
+        <section id="education" className="bg-[#0f0f0f] text-[#f5f5f5] py-28 md:py-32 relative">
+            <div ref={ref} className={`px-8 max-w-6xl mx-auto mb-12 md:mb-16 ${fadeClass}`}>
                 <h2 className="text-4xl md:text-6xl mb-12 md:mb-16 font-bold border-l-4 border-[#1D9E75] pl-4">Education</h2>
                 <div className="flex flex-col gap-6 px-8 max-w-6xl mx-auto">
                     {education.map((item) => (
