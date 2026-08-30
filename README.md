@@ -22,6 +22,11 @@ I am a Full Stack Developer graduating from Dallas College in December 2026 with
 - **Magnifit** — Workout tracker with CRUD, React, TypeScript, Express, and PostgreSQL
 - **Finder Dallas** — Directory of Dallas community resources (food banks, shelters, job centers)
 
+## Recent Updates (08-30-2026)
+- Project cards: hover effect, Live Demo + GitHub links, spacing aligned with Skills/Education
+- Contact section simplified to a centered layout with email CTA
+- README CI and live demo badges at top
+
 ## Getting Started
 
 Clone the repo:
