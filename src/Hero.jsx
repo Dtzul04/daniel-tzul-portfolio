@@ -28,11 +28,11 @@ function Hero() {
             </nav>
 
             <div className={`relative z-10 flex flex-col gap-4 px-4 sm:px-6 lg:px-8 max-w-2xl pt-24 md:pt-0 ${fadeClass}`}>
-                <h1 className="text-4xl md:text-6xl font-bold">Hi, I'm Daniel Tzul</h1>
+                <h1 className="text-4xl md:text-6xl font-bold">Hi, I&apos;m Daniel Tzul</h1>
                 <p className="text-xl md:text-2xl font-medium text-[#1D9E75]">Full Stack Developer</p>
                 <p className="text-sm md:text-base text-gray-400">A.A.S Web Development • Dallas College • Dec 2026 • 3.8 GPA</p>
                 <p className="text-gray-400 max-w-xl text-sm md:text-lg">Passionate about building applications that are interactive, user-friendly, and built for real people.</p>
-                <p className="md:hidden text-gray-500 italic text-sm border-l-2 border-[#1D9E75]/50 pl-3 mt-2">"Discovering solutions, one line of code at a time"</p>
+                <p className="md:hidden text-gray-500 italic text-sm border-l-2 border-[#1D9E75]/50 pl-3 mt-2">&ldquo;Discovering solutions, one line of code at a time&rdquo;</p>
             </div>
 
         </section>

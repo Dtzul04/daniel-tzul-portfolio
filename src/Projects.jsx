@@ -1,8 +1,4 @@
-import { useState, useEffect } from 'react'
-
 function Projects() {
-
-
     const projects = [
         {
             title: 'Jobify',

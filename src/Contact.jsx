@@ -22,7 +22,7 @@ function Contact() {
 
             <div className="w-full md:w-2/3 bg-[#1a1a1a] text-[#f5f5f5] border border-[#1D9E75]/60 rounded-xl p-8 flex flex-col gap-4">
                 <h2 className="text-3xl md:text-4xl font-bold">Get in touch</h2>
-                <p className="text-base md:text-lg text-gray-400 leading-relaxed">I'm always looking for new opportunities and collaborations. Feel free to reach out to me via email or LinkedIn.</p>
+                <p className="text-base md:text-lg text-gray-400 leading-relaxed">I&apos;m always looking for new opportunities and collaborations. Feel free to reach out to me via email or LinkedIn.</p>
             </div>
 
         </div>

@@ -19,7 +19,7 @@ function About() {
 
                 <div className="w-full md:w-2/3">
                     <p className="text-md text-gray-400 leading-relaxed">
-                        I'm a Full Stack Developer from Dallas, Texas.
+                        I&apos;m a Full Stack Developer from Dallas, Texas.
                         I did not take the traditional path into tech. Before I wrote 
                         my first line of code, I spent years working in some of the 
                         most fast-paced, high-pressure environments you can imagine: 
