@@ -1,5 +1,8 @@
 # Daniel Tzul — Developer Portfolio
 
+[![CI](https://github.com/Dtzul04/daniel-tzul-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/Dtzul04/daniel-tzul-portfolio/actions/workflows/ci.yml)
+[![Live Demo](https://img.shields.io/badge/demo-live-1D9E75)](https://daniel-tzul-portfolio.vercel.app/)
+
 A personal portfolio website built with React and Vite, showcasing my projects, skills, and experience as a Full Stack Developer.
 
 ## Live Demo
