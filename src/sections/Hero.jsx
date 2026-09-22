@@ -7,7 +7,7 @@ function Hero() {
     }, [])
 
     const fadeClass = `transition-opacity duration-700 ${visible ? 'opacity-100' : 'opacity-0'}`
-    const navLinkClass = 'px-4 py-2 rounded-full text-sm font-medium text-gray-200 hover:text-[#1D9E75] hover:bg-white/5 transition-all duration-300'
+    const navLinkClass = 'shrink-0 px-2.5 py-1.5 text-xs md:px-4 md:py-2 md:text-sm rounded-full font-medium text-gray-200 hover:text-[#1D9E75] hover:bg-white/5 transition-all duration-300'
 
     return (
         <section className="bg-[#0f0f0f] text-[#f5f5f5] min-h-[85vh] flex items-center pl-6 md:pl-16 relative" style={{
@@ -19,7 +19,7 @@ function Hero() {
 
             <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-black/30"></div>
 
-            <nav className={`absolute top-5 left-1/2 -translate-x-1/2 md:left-auto md:right-6 md:translate-x-0 z-20 flex flex-wrap justify-center gap-1 rounded-full border border-white/10 bg-black/50 backdrop-blur-md px-3 py-2 ${fadeClass}`}>
+            <nav className={`absolute top-5 left-1/2 -translate-x-1/2 md:left-auto md:right-6 md:translate-x-0 z-20 flex flex-nowrap items-center gap-1 overflow-x-auto max-w-[calc(100%-1.5rem)] rounded-full border border-white/10 bg-black/50 backdrop-blur-md px-2 py-1.5 md:px-3 md:py-2 ${fadeClass}`}>
                 <a href="#about" className={navLinkClass}>About</a>
                 <a href="#skills" className={navLinkClass}>Skills</a>
                 <a href="#education" className={navLinkClass}>Education</a>
@@ -32,6 +32,12 @@ function Hero() {
                 <p className="text-xl md:text-2xl font-medium text-[#1D9E75]">Full Stack Developer</p>
                 <p className="text-sm md:text-base text-gray-400">A.A.S Web Development • Dallas College • Dec 2026 • 3.8 GPA</p>
                 <p className="text-gray-400 max-w-xl text-sm md:text-lg">Passionate about building applications that are interactive, user-friendly, and built for real people.</p>
+                <a
+                    href="#projects"
+                    className="inline-block mt-2 bg-[#1D9E75] text-black px-6 py-3 rounded-lg font-semibold w-fit hover:opcaity-90 transition-opacity"
+                >
+                    View My Work
+                </a>
                 <p className="md:hidden text-gray-500 italic text-sm border-l-2 border-[#1D9E75]/50 pl-3 mt-2">&ldquo;Discovering solutions, one line of code at a time&rdquo;</p>
             </div>
 

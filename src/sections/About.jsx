@@ -1,10 +1,10 @@
-import { useInView } from './hooks/useInView'
+import { useInView } from '../hooks/useInView'
 
 function About() {
     const { ref, fadeClass } = useInView()
 
     return (
-        <section id="about" className="bg-[#0f0f0f] text-[#f5f5f5] py-24 relative">
+        <section id="about" className="bg-[#0f0f0f] text-[#f5f5f5] py-20 md:py-24 relative">
 
             <div ref={ref} className={`flex flex-col md:flex-row gap-8 md:gap-16 items-center h-full max-w-5xl w-full mx-auto px-8 ${fadeClass}`}>
 

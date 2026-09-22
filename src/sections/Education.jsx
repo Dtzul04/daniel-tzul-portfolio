@@ -1,4 +1,4 @@
-import { useInView } from './hooks/useInView'
+import { useInView } from '../hooks/useInView'
 
 function Education() {
     const { ref, fadeClass } = useInView()
@@ -18,10 +18,10 @@ function Education() {
     ]
 
     return (
-        <section id="education" className="bg-[#0f0f0f] text-[#f5f5f5] py-28 md:py-32 relative">
+        <section id="education" className="bg-[#0f0f0f] text-[#f5f5f5] py-20 md:py-24 relative">
             <div ref={ref} className={`px-8 max-w-6xl mx-auto mb-12 md:mb-16 ${fadeClass}`}>
-                <h2 className="text-4xl md:text-6xl mb-12 md:mb-16 font-bold border-l-4 border-[#1D9E75] pl-4">Education</h2>
-                <div className="flex flex-col gap-6 px-8 max-w-6xl mx-auto">
+                <h2 className="text-4xl md:text-6xl mb-8 md:mb-10 font-bold border-l-4 border-[#1D9E75] pl-4">Education</h2>
+                <div className="flex flex-col gap-6 max-w-6xl mx-auto">
                     {education.map((item) => (
                         <div key={item.school} className="bg-[#1a1a1a] border border-[#1D9E75]/40 border-l-4 border-l-[#1D9E75] rounded-xl p-6 md:p-8">
                             <h3 className="text-xl md:text-2xl font-bold">{item.school}</h3>

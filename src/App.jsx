@@ -1,10 +1,10 @@
-import Hero from './Hero';  
-import About from './About';  
-import Projects from './Projects';
-import Contact from './Contact';
-import Footer from './Footer';
-import Skills from './Skills';
-import Education from './Education';
+import Hero from './sections/Hero'
+import About from './sections/About'
+import Skills from './sections/Skills'
+import Education from './sections/Education'
+import Projects from './sections/Projects'
+import Contact from './sections/Contact'
+import Footer from './sections/Footer'
 
 function App() {
     return (

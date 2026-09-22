@@ -1,4 +1,4 @@
-import { useInView } from './hooks/useInView'
+import { useInView } from '../hooks/useInView'
 
 function Skills() {
     const { ref, fadeClass } = useInView()
@@ -13,15 +13,15 @@ function Skills() {
         },
         {
             title: 'Tools',
-            skills: ['Git', 'Vite']
+            skills: ['Git', 'Vite', 'GitHub', 'GitHub Actions', 'Vercel', 'Render', 'Cursor', 'Next.js']
         }
     ]
 
     return (
-        <section id="skills" className="bg-[#0f0f0f] text-[#f5f5f5] py-28 md:py-32 relative">
+        <section id="skills" className="bg-[#0f0f0f] text-[#f5f5f5] py-20 md:py-24 relative">
 
             <div ref={ref} className={fadeClass}>
-            <div className="px-8 max-w-6xl mx-auto mb-12 md:mb-16">
+            <div className="px-8 max-w-6xl mx-auto mb-8 md:mb-10">
                 <h2 className="text-4xl md:text-6xl font-bold border-l-4 border-[#1D9E75] pl-4">Tech Stack</h2>
             </div>
 

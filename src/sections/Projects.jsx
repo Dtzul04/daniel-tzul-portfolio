@@ -1,14 +1,14 @@
-import { useInView } from './hooks/useInView'
+import { useInView } from '../hooks/useInView'
 
 function Projects() {
     const { ref, fadeClass } = useInView()
     const projects = [
         {
             title: 'Jobify',
-            description: 'A job application tracker for logging roles, updating status (pending, interview, declined), and reviewing your search with a simple dashboard. Built as a full-stack app so applications stay saved and easy to manage.',
+            description: 'AI-powered job finder using Gemini AI to summarize job listings',
             image: '/projects-assets/Jobify.png',
             technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL'],
-            live: null,
+            live: 'https://jobify-jade.vercel.app',
             github: 'https://github.com/Dtzul04/Jobify',
         },
         {
@@ -27,15 +27,23 @@ function Projects() {
             live: 'https://finder-dallas.vercel.app',
             github: 'https://github.com/Dtzul04/FinderDallas',
         },
+        {
+            title: 'GuideBooks',
+            description: 'A developer reference tool to sharpen your coding knowledge — browse concepts, quiz yourself, and follow learning roadmaps across modern web development.',
+            image: '/projects-assets/GuideBooks.png',
+            technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+            live: 'https://guide-books.vercel.app',
+            github: 'https://github.com/Dtzul04/GuideBooks',
+        },
     ]
 
     const linkClass = 'text-[#9ca3af] hover:text-[#1D9E75] transition-colors duration-300'
 
     return (
-        <section id="projects" className="bg-[#1e1e1e] text-[#f5f5f5] py-28 md:py-32 px-6 md:px-16">
+        <section id="projects" className="bg-[#1e1e1e] text-[#f5f5f5] py-20 md:py-24 px-6 md:px-16">
 
             <div ref={ref} className={fadeClass}>
-            <div className="px-2 max-w-6xl mx-auto mb-12 md:mb-16">
+            <div className="px-2 max-w-6xl mx-auto mb-8 md:mb-10">
                 <h2 className="text-4xl md:text-6xl font-bold border-l-4 border-[#1D9E75] pl-4">Projects</h2>
             </div>
 

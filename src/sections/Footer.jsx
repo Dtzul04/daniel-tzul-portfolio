@@ -1,4 +1,4 @@
-import { useInView } from './hooks/useInView'
+import { useInView } from '../hooks/useInView'
 
 function Footer() {
     const { ref, fadeClass } = useInView()
