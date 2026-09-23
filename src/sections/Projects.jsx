@@ -12,14 +12,6 @@ function Projects() {
             github: 'https://github.com/Dtzul04/Jobify',
         },
         {
-            title: 'Magnifit',
-            description: 'A workout tracker to log, filter, edit, and delete gym sessions. React and TypeScript on the frontend, with an Express REST API and a Supabase PostgreSQL database. Frontend on Vercel, backend on Render.',
-            image: '/projects-assets/Magnifit.png',
-            technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL'],
-            live: 'https://magnifit.vercel.app',
-            github: 'https://github.com/Dtzul04/Magnifit',
-        },
-        {
             title: 'Finder Dallas',
             description: 'A directory for Dallas residents to find food banks, shelters, job centers, and health services in one place, with a search experience that makes local help easier to reach.',
             image: '/projects-assets/FinderDallas.png',
