@@ -9,7 +9,7 @@ function Skills() {
         },
         {
             title: 'Backend',
-            skills: ['Node.js', 'PostgreSQL', 'Python']
+            skills: ['Node.js', 'PostgreSQL', 'Python', 'Gemini API']
         },
         {
             title: 'Tools',
