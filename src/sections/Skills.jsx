@@ -13,7 +13,7 @@ function Skills() {
         },
         {
             title: 'Tools',
-            skills: ['Git', 'GitHub', 'GitHub Actions', 'Vercel', 'Railway', 'Cursor', 'Next.js']
+            skills: ['Git', 'GitHub', 'GitHub Actions', 'Vercel', 'Cursor', 'Next.js']
         }
     ]
 
