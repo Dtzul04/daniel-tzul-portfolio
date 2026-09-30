@@ -9,11 +9,11 @@ function Skills() {
         },
         {
             title: 'Backend',
-            skills: ['Node.js', 'Express', 'PostgreSQL', 'Python']
+            skills: ['Node.js', 'PostgreSQL', 'Python']
         },
         {
             title: 'Tools',
-            skills: ['Git', 'Vite', 'GitHub', 'GitHub Actions', 'Vercel', 'Render', 'Cursor', 'Next.js']
+            skills: ['Git', 'GitHub', 'GitHub Actions', 'Vercel', 'Railway', 'Cursor', 'Next.js']
         }
     ]
 

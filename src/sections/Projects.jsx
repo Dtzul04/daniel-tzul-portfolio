@@ -15,7 +15,7 @@ function Projects() {
             title: 'Finder Dallas',
             description: 'A directory for Dallas residents to find food banks, shelters, job centers, and health services in one place, with a search experience that makes local help easier to reach.',
             image: '/projects-assets/FinderDallas.png',
-            technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL'],
+            technologies: ['React', 'TypeScript', 'Node.js', 'Next.js', 'PostgreSQL'],
             live: 'https://finder-dallas.vercel.app',
             github: 'https://github.com/Dtzul04/FinderDallas',
         },
